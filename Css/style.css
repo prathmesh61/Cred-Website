@@ -49,6 +49,18 @@ body {
   margin: 0 auto;
   padding: 2rem;
 }
+.btn-white {
+  font-size: 1.2vw;
+  font-family: GilB;
+  text-align: center;
+  padding: 1vw 3vw;
+  color: #0f0f0f;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5vw;
+  min-width: 200px;
+}
 
 /* nav css */
 #main {
@@ -61,12 +73,10 @@ body {
   position: fixed;
   top: 0;
 
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   color: rgb(248, 248, 248);
   transition: transform 0.3s ease 0s;
   z-index: 200;
-
-  box-shadow: rgba(0, 0, 0, 0.13) 0px 9px 9px -9px;
 }
 
 .logo {
@@ -206,7 +216,7 @@ span {
   font-family: GilB;
 }
 
-.special-wrapper > button {
+/* .btn-white {
   font-size: 1.2vw;
   font-family: GilB;
   text-align: center;
@@ -217,7 +227,7 @@ span {
   outline: none;
   border-radius: 5vw;
   min-width: 200px;
-}
+} */
 /* brand css */
 #brand {
   width: 100%;
@@ -226,4 +236,83 @@ span {
 .brand-img {
   width: 100%;
   object-fit: cover;
+}
+
+/* pin css */
+#pin {
+  height: 100%;
+  width: 100%;
+}
+.pin-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+}
+.left {
+  height: 80vh;
+}
+.left-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 25vw;
+}
+.left-wrapper:nth-child(1) {
+  margin-top: 4rem;
+}
+.left > h3 {
+  font-size: 4.5vw;
+  font-family: GilB;
+}
+.left > p {
+  font-size: 1.3vw;
+  width: 70%;
+  font-family: GilM;
+  margin-top: 2rem;
+}
+.right {
+  height: 100%;
+}
+.right > img {
+  height: 900px;
+
+  object-fit: contain;
+}
+/*  fixed bg */
+#fixed-bg {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0.8;
+}
+#fixed-bg > img {
+  object-fit: cover;
+  width: 100%;
+}
+/* footer */
+#Cta {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cta-box > .star {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.cta-box > .star > p {
+  font-size: 1.5vw;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+.cta-box > div > h3 {
+  font-size: 5vw;
+  font-family: GilB;
+}
+.cta-box > div > p {
+  font-size: 3vw;
+  font-family: GilB;
 }
